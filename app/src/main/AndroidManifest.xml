@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.majhashetkari">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens>
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+    </supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MajhaShetkari"
+        tools:targetApi="31">
+        <activity
+            android:name=".buyOption.Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".News.NewsWebView"
+            android:exported="false" />
+        <activity
+            android:name=".MobileNumber"
+            android:exported="false" />
+        <activity
+            android:name=".OTPVerify"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Theme.MajhaShetkari.onSale" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:theme="@style/Theme.MajhaShetkari.onSale" />
+        <activity
+            android:name=".sellOption.SellQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".AnimationSplash"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sellOption.SellCrops"
+            android:exported="false" />
+        <activity
+            android:name=".buyOption.BuyCrops"
+            android:exported="false"
+            android:theme="@style/Theme.MajhaShetkari.onSale" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".buyOption.upiOrCashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyOption.Details"
+            android:exported="false" />
+        <activity
+            android:name=".buyOption.MainClass"
+            android:exported="false" />
+        <activity
+            android:name=".buyOption.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyOption.DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyOption.ShowAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sellOption.SellDetails"
+            android:exported="false" />
+    </application>
+
+</manifest>

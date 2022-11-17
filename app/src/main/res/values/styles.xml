@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">#599A0D</item>
+        <item name="colorPrimaryDark">#599A0D</item>
+        <item name="colorAccent">#599A0D</item>
+    </style>
+    <style name="NoAction" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+</resources>

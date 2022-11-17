@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable-v24/cart3.xml" value="0.1805" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable-xxhdpi/butto_round.xml" value="0.2165" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/background_transparent.xml" value="0.2555" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/bg.xml" value="0.2415" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/buyicon.xml" value="0.2355" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/daily_rates.xml" value="0.2475" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/daily_ratesbg.xml" value="0.2475" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_buyicon.xml" value="0.2355" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_cart_tab.xml" value="0.226" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_dailyrates_tab.xml" value="0.1325" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_home_tab.xml" value="0.226" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_newstab.xml" value="0.232" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_spinnner.xml" value="0.2475" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/ic_user_tab.xml" value="0.226" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/drawable/rounded_edittext.xml" value="0.2195" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/font/amethysta.xml" value="0.1810810810810811" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_animation_splash.xml" value="0.20179563916203505" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_buy_crops.xml" value="0.136" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_buy_crops2.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_cart.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_delivery.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_detailed.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_details.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_english_news.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_front_animation_splash.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_login.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_main_class.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_mobile_number.xml" value="0.20179563916203505" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_news_web_view.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_news_web_view2.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_otpverify.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_question.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_questions.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_register.xml" value="0.152" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_sell_crops.xml" value="0.176" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_sell_details.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_sell_question_image.xml" value="0.1899365367180417" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_sell_questions.xml" value="0.18552036199095023" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_sell_quetion_image.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_show_all.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_upi.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/activity_upi_or_cash.xml" value="0.16" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/category_list.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/dailyrates_item.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_dailyrates_tab.xml" value="0.1516891891891892" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_english.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_hindi.xml" value="0.15304054054054053" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_home.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_home_tab.xml" value="0.176" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_marathi.xml" value="0.15304054054054053" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_news_tab.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_sell_homefragment.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_sell_my_add.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_sellquestion1.xml" value="0.16" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_sellquestion2.xml" value="0.1899365367180417" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/fragment_user_tab.xml" value="0.2359375" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/item.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/item_cart.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/item_product.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/item_products_sell.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/news_row.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/news_rows.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/products.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/sell_item.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/sell_products.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/layout/show_all_item.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MajhaShetkari/app/src/main/res/menu/nav_bar.xml" value="0.20521590423257802" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
