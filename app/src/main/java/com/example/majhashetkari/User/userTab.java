@@ -1,10 +1,18 @@
-package com.example.majhashetkari;
+package com.example.majhashetkari.User;
 
+import static android.content.Context.MODE_PRIVATE;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,12 +24,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.majhashetkari.Login;
+import com.example.majhashetkari.MainActivity;
+import com.example.majhashetkari.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -32,9 +45,8 @@ public class userTab extends Fragment {
 
      FirebaseAuth mAuth;
      TextView txtUser;
-     ImageView editprofile;
+     ImageView editprofile, aboutUs;
     String key = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
     private Button btnLogout;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -70,7 +82,8 @@ public class userTab extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState); 
+
         setHasOptionsMenu(true);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -83,34 +96,37 @@ public class userTab extends Fragment {
         menu.clear();
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_user_tab, container, false);
 
-        editprofile = v.findViewById(R.id.editpr);
+        editprofile = v.findViewById(R.id.editprof);
+        aboutUs = v.findViewById(R.id.aboutUs);
+
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-        reference.child("Users").child(key).addListenerForSingleValueEvent(new ValueEventListener() {
+        reference.child("Users").child(key).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String namedb = snapshot.child("User Name").getValue(String.class);
-                String emaildb = snapshot.child("Mail Id").getValue(String.class);
-                String passdb = snapshot.child("Password").getValue(String.class);
-                String phonedb = snapshot.child("Mobile Number").getValue(String.class);
-                TextView userName = (TextView) v.findViewById(R.id.txtUser);
-                userName.setText(namedb);
+                String user_name = snapshot.child("User Name").getValue(String.class);
+                TextView userName = (TextView) getActivity().findViewById(R.id.txtUser);
+                userName.setText(user_name);
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
 
-        btnLogout = v.findViewById(R.id.LogoutBtn);
+                btnLogout = v.findViewById(R.id.LogoutBtn);
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
 
@@ -122,15 +138,74 @@ public class userTab extends Fragment {
 
             } });
 
+        editprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                passUserData();
+            }
+        });
+
+        aboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                aboutUsData();
+            }
+
+            private void aboutUsData() {
+                Intent intent = new Intent(getActivity().getApplicationContext(), About_Us.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         return v;
     }
 
-    public void logout() {
+    public void passUserData() {
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+        reference.child("Users").child(key).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                String user_name = snapshot.child("User Name").getValue(String.class);
+                TextView userName = (TextView) getActivity().findViewById(R.id.txtUser);
+                userName.setText(user_name);
+
+                if (snapshot.exists()) {
+                    String namedb = snapshot.child("User Name").getValue(String.class);
+                    String emaildb = snapshot.child("Mail Id").getValue(String.class);
+                    String passdb = snapshot.child("Password").getValue(String.class);
+                    String phonedb = snapshot.child("Mobile Number").getValue(String.class);
+
+                    Intent intent = new Intent(getActivity().getApplicationContext(), EditProfile.class);
+
+                    intent.putExtra("User Name", namedb);
+                    intent.putExtra("Mail Id", emaildb);
+                    intent.putExtra("Password", passdb);
+                    intent.putExtra("Mobile Number", phonedb);
+
+                    startActivity(intent);
+                }
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+    }
+
+
+            public void logout() {
 
         FirebaseAuth.getInstance().signOut();
 
         startActivity(new Intent(getActivity(), Login.class));
+    }
+
+    public void aboutUs(View view) {
+        Intent intent = new Intent(getActivity().getApplicationContext(), About_Us.class);
+        startActivity(intent);
+
     }
 }
