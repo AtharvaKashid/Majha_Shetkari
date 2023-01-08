@@ -3,6 +3,7 @@ package com.example.majhashetkari;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -12,8 +13,15 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,7 +30,10 @@ import com.google.firebase.auth.FirebaseAuth;
  */
 public class userTab extends Fragment {
 
-    private FirebaseAuth mAuth;
+     FirebaseAuth mAuth;
+     TextView txtUser;
+     ImageView editprofile;
+    String key = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
     private Button btnLogout;
 
@@ -79,8 +90,25 @@ public class userTab extends Fragment {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_user_tab, container, false);
 
+        editprofile = v.findViewById(R.id.editpr);
 
         mAuth = FirebaseAuth.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+        reference.child("Users").child(key).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String namedb = snapshot.child("User Name").getValue(String.class);
+                String emaildb = snapshot.child("Mail Id").getValue(String.class);
+                String passdb = snapshot.child("Password").getValue(String.class);
+                String phonedb = snapshot.child("Mobile Number").getValue(String.class);
+                TextView userName = (TextView) v.findViewById(R.id.txtUser);
+                userName.setText(namedb);
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
 
         btnLogout = v.findViewById(R.id.LogoutBtn);
 
